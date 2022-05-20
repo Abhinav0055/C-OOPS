@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class AddData      //Base Class
+class AddData      
 {
     protected:
         int E,M,H, i;
@@ -18,7 +18,7 @@ class AddData      //Base Class
                 cin>>H;
         }
 };
-//Class Total – Derived Class. Derived from class AddData and Base class of class Percentage
+
 class Total : public AddData   
 {
     protected:
@@ -29,7 +29,7 @@ class Total : public AddData
                 total = E+M+H;
         }
 };
-class Percentage : public Total       //Class Percentage – Derived Class. Derived from class Total
+class Percentage : public Total       
 {
     private:
         float per;
