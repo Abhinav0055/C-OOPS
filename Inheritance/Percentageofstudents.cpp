@@ -4,18 +4,18 @@ using namespace std;
 class AddData      
 {
     protected:
-        int E,M,H, i;
+        int subjects[3], i;
     public:
         void accept_details()
         {
                 cout<<"\n Enter Marks for Three Subjects ";
                 cout<<"\n ------------------------------- \n";
                 cout<<"\n English : ";
-                cin>>E;
+                cin>>subjects[0];
                 cout<<"\n Maths : ";
-                cin>>M;
+                cin>>subjects[1];
                 cout<<"\n History : ";
-                cin>>H;
+                cin>>subjects[2];
         }
 };
 
@@ -26,7 +26,7 @@ class Total : public AddData
     public:
         void total_of_three_subjects()
         {
-                total = E+M+H;
+                total = subjects[0] + subjects[1] + subjects[2];
         }
 };
 class Percentage : public Total       
